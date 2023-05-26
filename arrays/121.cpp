@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-int maxProfit(vector<int> &prices)
+int solve(vector<int> &prices)
 {
     int buy = 0, sell = 1;
     int maxProfit = 0;
@@ -23,8 +22,6 @@ int maxProfit(vector<int> &prices)
 }
 int main()
 {
-    vector<int> arr = {7,1,5,3,6,4};
-    int res = maxProfit(arr);
-
-    cout<<res<<"\n";
+    vector<int> arr = {7, 1, 5, 3, 6, 4};
+    cout << solve(arr) << endl;
 }
